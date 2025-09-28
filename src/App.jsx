@@ -23,8 +23,7 @@ export default function App() {
         style={{ backgroundImage: "var(--rr-gradient)" }}
       >
         <Header />
-        <main className="container mx-auto px-4 py-8">
-          <Routes>
+        <Routes>
             <Route path="/" element={<Landing />} />
             <Route path="/club/*" element={<SportsClubPage />} />
             <Route path="/complex/*" element={<SportsComplexPage />} />
@@ -37,7 +36,6 @@ export default function App() {
             <Route path="/events" element={<EventsPage />} />
             <Route path="/contact" element={<ContactPage />} />
           </Routes>
-        </main>
         <Footer />
       </div>
     </ProjectProvider>
